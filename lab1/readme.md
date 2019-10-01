@@ -2,16 +2,19 @@
 
 Due October 9
 
-This lab has three parts:
+This lab covers the following topics:
 
-1. Input and Testing Values
-2. Writing Functions
+1. Values and Variables review
+2. Functions, Return Values
+3. Conditionals
+3. Iteration
+4. Combining concepts into a new function
 
 The lab reviews concepts introduced in Chapters 1-7 of *Exploratory Programming from the Humanities*. Its goal is to provide practice in reading and writing code.
 
-To turn in the assignment, commit and push the modified .pynb files to your lab1 subdirectory.
+To turn in the assignment, commit and push the modified .pynb files to your lab1 subdirectory and submit the URL of your repository (just the root repo would be enough)
 
-# Getting Started
+## Getting Started
 
 First, make sure you have your local GitHub repository folder open in VS Code.
 
@@ -29,11 +32,11 @@ Save it in the lab1 directory. You can then import the notebook using VS Code by
 
 ---
 
-## Part 1: Programming Concepts Review
+## Programming Concepts Review
 
-In [Part 1](./part1.ipynb), we will review each programming concept with examples, including *variables*, *functions*, *iteration* and *conditionals*. You will finish by writing a new function that combines the various concepts.
+In [the notebook](./lab1.ipynb), we will review each programming concept with examples, including *variables*, *functions*, *iteration* and *conditionals*. You will finish by writing a new function that combines the various concepts.
 
-# Submission
+## Submission
 You can export the file (`lab1.py`, if you saved it under that name) using the command pallette: "Python: Export Current Python File As Jupyter Notebook"
 
 To submit, you should either run the following commands from the integrated terminal in VS code, or use the Git tab on the left to add the files, commit and push:
@@ -42,13 +45,10 @@ To submit, you should either run the following commands from the integrated term
 ```bash
 git add *
 ```
-2. Make sure that both `lab1/part1.ipynb` are included in the commit:
+2. Make sure that `lab1/lab1.ipynb` is included in the commit:
 ```bash
 git status
 ```
-
-[](../images/lab1-gitfiles.png)
-
 
 3. Create a commit with a message
 ```bash
@@ -58,3 +58,5 @@ git commit -m "Lab 1 submission"
 ```bash
 git push
 ```
+5. Submit on WebCourses the URL
+[WebCourses Lab 1 Submission](https://webcourses.ucf.edu/courses/1335057/assignments/6366089)
