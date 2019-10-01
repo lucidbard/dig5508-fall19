@@ -24,11 +24,14 @@ Then, create a subdirectory for this lab. You can do this either in VS Code thro
 $ mkdir lab1
 ```
 
-Next, download the two Jupyter Notebooks from the class repository: 
+Next, download the Jupyter Notebooks from the class repository and place them in that directory: 
 
 [lab1 Jupyter Notebook](https://raw.githubusercontent.com/lucidbard/dig5508-fall19/master/lab1/part1.ipynb)
 
-Save it in the lab1 directory. You can then import the notebook using VS Code by running the command `Python: Import Jupyter Notebook` using `Ctrl+Shift+P` or `Command+Shift+P`.
+You can then import the notebook using VS Code by running the command `Python: Import Jupyter Notebook` using `Ctrl+Shift+P` or `Command+Shift+P`.
+
+This will create a new file with the python contents inside. Save this as "lab1.py" and read and follow the instructions inside each cell.
+
 
 ---
 
