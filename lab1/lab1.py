@@ -46,7 +46,10 @@
 
 #%% [markdown]
 
-# ON YOUR OWN: Type an example value for each of the four types of values in this cell below each comment: 
+# *ON YOUR OWN:* Type an example value for each of the four types of values in this cell below each comment: 
+#%%
+# WRITE YOUR CODE BELOW EACH
+
 # string
 
 # int
@@ -71,14 +74,16 @@ type(5) # Will print the "int" to the console.
 # *initializes* it to the value 5
 #%%
 a = 5
-#%% 
+#%% [markdown]
 # If you enter a variable without first defining it, you will receive a NameError:
+
+#%% 
 b
 
-#%%
-
+#%% [markdown]
 # *ON YOUR OWN:* Assign an integer to the variable `b` above so that no error
-# will result and re-run this cell.
+# will result and re-run the following cell.
+#%%
 try:
     if(type(b)==type(0)):
         print("Well done.")
@@ -93,10 +98,12 @@ except:
 # executed one after the next. The "=" symbol, which in math denotes equality,
 # is used in the "assignment" statement. When you read the following line, read
 # it as "a is assigned the value 6"
+#%%
 a = 6
 print(a)
 #%% [markdown]
 # *ON YOUR OWN:* Add additional lines of code below that assign and then print the value of a with the following values:
+#%%
 # - "Hello World"
 # - 42.0 
 # - True
@@ -107,21 +114,22 @@ print(a)
 # Expressions are instructions to combine one or more variables or values.
 # Simple expressions include arithmetic expressions that produce the result:
 # The following expression will produce the value 8 using the "+" (integer addition) operator
+#%%
 3+5
-
+#%% [markdown]
 # # Parentheses
 # You can also force the program to evaluate expressions in a particular order
 # using parentheses. For instance, the following two lines result in different
 # orders of execution:
-
+#%%
 print(10/2+3)
 print(10/(2+3))
 
 #%% [markdown] 
 # # Operators
 # Operators are one or more characters that designate a particular operation.
-# These include "+", "-", "/" and "*", but also include the function call
-# operator `()` and the member operator
+# These include the characters `+`, `-`, `/` and `*`, but also include the function call
+# operator `()` and the member operator `.
 
 #
 # %% [markdown]
@@ -130,47 +138,56 @@ print(10/(2+3))
 # Functions are bundles of code that can be executed multiple times. They are
 # "called" using a list of *arguments*. For instance, `print()` takes one or
 # more arguments and prints the values to the output
+#%%
 print("This is the result of a function call")
-
+#%% [markdown]
 # The function `print()` does not return a value. Instead, it causes the
 # argument to appear in the output of the program. This is an important
 # distinction, as you will not be able to combine functions with no output in
 # the same way as you can combine those that return a value.
+
 #%% [markdown]
 # ## Defining a function
 # The function below, `my_print`, will execute the single instruction when it is called.
 # To define a function, use the following syntax:
+#%%
 def my_print():
     print("Function called")
 #%% [markdown]
 # ## Calling a function
 # To call a function that has previously been defined, you use the name of the function:
-
+#%%
 my_print()
 #%% [markdown]
 # ## Return values
 # A function can *return* a value. This means that where the function was
 # called, the value is substituted. For a simple example, the function below, `return_four`
 # returns the integer 4. Its return value can be used in arithmetic expressions.
-
+#%%
 def return_four():
     return 4
 return_four()
-#%% [markdown] We can show that calling the function `return_four` can be used
-# in expressions by printing an expression that adds 3 to the returned value.
+#%% [markdown] 
+# We can show that calling the function `return_four` can be used
+# in expressions by printing an expression that adds 3 to the returned value:
+
+#%%
 print(3+return_four())
 
 #%% [markdown] 
-#
 # *ON YOUR OWN:* Write a function that returns the string "!" (exclamation),
 # called "exclaim", and use it to concatenate the returned value to the string
 # "Hello World" in a print statement.
+#%%
+# WRITE YOUR CODE HERE
 
+# 
 #%% [markdown]
 # ## Parameters and Arguments
 # A *parameter* is the local variable that is associated with a function. The
 # function `f1` below has a single parameter, and it adds 1 to the value passed
 # in as an argument.
+#%%
 def f1(parameter1):
     return parameter1+1
 
@@ -178,9 +195,11 @@ f1(1) # 1 is passed in as an argument to the function, and is bound to the local
 
 #%% [markdown] 
 #
-# *ON YOUR OWN:* In this cell, Modify the function `multiply_2` to accept two
+# *ON YOUR OWN:* In the following cell, Modify the function `multiply_2` to accept two
 # arguments and returns the result of multiplying them together. You may name
 # the arguments anything you want
+
+#%%
 def multiply_2():
     return
 
@@ -192,8 +211,8 @@ def multiply_2():
 # followed by an expression that evaluates to a Boolean value, `True` or
 # `False,` followed by a colon and a body of code. 
 #
-# Conventionally, you place the "conditional" expresison inside parentheses.
-
+# Conventionally, you place the "conditional" expresison inside parentheses, but you do not have to in Python.
+#%%
 if True:
     print("Test is true") 
 
@@ -209,6 +228,7 @@ if 5 > 3:
 # expected to be an integer) into a string in order to concatenate it with
 # another string.
 #
+#%%
 def compare_with_3(input):
     if input < 3:
         print(str(input) + " is less than 3")
@@ -224,12 +244,19 @@ compare_with_3(4)
 #%% [markdown]
 #
 # *ON YOUR OWN*: Write a new version of the function that compares the input
-# with a second argument and name it "compare":
+# with a second argument and name it "compare"
+
 # For instance, calling it with the following arguments should result in the following printed output:
 # compare(3,3)
 # 3 is equal to 3
-# compare(10,3) 
-# 10 is greater than 3
+# compare(10,4) 
+# 10 is greater than 4
+# compare(2,10)
+# 2 is less than 10
+#%% 
+# WRITE YOUR CODE HERE
+
+# 
 
 #%% [markdown]
 # # Scope
@@ -240,21 +267,22 @@ compare_with_3(4)
 # Any variable declared in the outer scope may be available inside of a function. 
 
 # For example:
-
+#%%
 x = 5
 def out_of_scope():
     print(x)
 out_of_scope()
-#%% [markdown]
-# If a variable is declared inside of a function has the same name as the outer variable, it will "shadow" it:
-
+#%% [markdown] If a variable is declared inside of a function has the same name
+# as the outer variable, it will "shadow" it. A shadowed variable will prevent
+# accessing the global variable.
+#%%
 x = 10
 def inside():
     # This will set the local variable x to 20, but not change the above variable x.
     x = 20
-    print(x)
+    print(x) # 20
 inside()
-print(x)
+print(x) # 10
 #%% [markdown] 
 # 
 # This is intended to isolate the world of the function from the
@@ -263,9 +291,8 @@ print(x)
 # 
 # This way, the function can be reused in multiple contexts.
 
-# If the function changes the value passed in, the new value can be assigned to the previosu variable:
-
-
+# If the function changes the value passed in, the new value can be assigned to the previous variable:
+#%%
 def add_one(x):
     return x + 1
 x = 10
@@ -280,12 +307,13 @@ print(x)
 # defined using brackets. For instance, [1,2] is a sequence that contains the
 # integer 1 in the 0 index, and the integere 2 in the 1 location. The first
 # location of a sequence is 0. 
-#
+#%%
 sequence = [1,2]
 sequence
 #%% [markdown] The syntax for a for loop is the keyword `for` followed by the
 # name of a local variable that each value will be bound to, then  the keyword
 # `in` followed by the sequence to iterate over:
+#%%
 for value in [1,2]:
     print(value)
 
@@ -293,7 +321,7 @@ for value in [1,2]:
 # 
 # You can generate a sequence to iterate a specified number of
 # times using the `range` method:
-
+#%%
 for value in range(1,10):
     print(value)  
 
@@ -302,6 +330,7 @@ for value in range(1,10):
 # The while loop will continue executing until the expression after it is true.
 # This is useful if you don't know when the loop will end, whereas the `for`
 # loop is often called "definite iteration" for this reason. 
+#%%
 x = 10
 while x > 1:
     print(x)
@@ -313,6 +342,7 @@ while x > 1:
 # the 'import' keyword, and call methods using the '.' operator. One useful
 # method in the random function is the randint, which returns a random integere
 # between the two arguments. 
+#%%
 import random
 print(random.randint(2,100))
 print(random.randint(2,100))
@@ -324,3 +354,7 @@ print(random.randint(2,100))
 #
 # The function should accept a single argument. For instance, sum_random(2)
 # would sum two numbers between 1 and 100: 34 and 16 and return the value 50.
+#%%
+# WRITE YOUR CODE HERE
+
+# 
