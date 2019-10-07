@@ -21,6 +21,19 @@
 # Write a function that concatenates two strings together, with a space in
 # between, and returns the result. 
 #%%
+def concat_strings(a,b):
+    print("Unimplemented")
+
+#%%
+
+import random
+for value in range(100):
+    ran_num = random.randint(0,100)
+    if(concat_strings("Test"+str(value),"Test"+str(ran_num)) == 
+        "Test"+(str(value)) +"Test"+str(ran_num)):
+        print("Success")
+    else:
+        print("Fail")
 
 # 4 calc_mean
 # Write a function that calculates the mean of a list of numbers and returns that value
