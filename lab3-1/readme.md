@@ -129,7 +129,7 @@ The function should:
 ### **3-2.** (2pts) Interactivity
 Make the function authored in 3-1 occur when the user presses a key on the keyboard (space key). Look at the example code for keyboard events for guidance.
 
-### **3-2.** (2pts) New Object
+### **3-3.** (2pts) New Object
 Create a new class that displays a visual representation using similar methods to Car. 
 
 Create several of these using random starting parameters in the setup function. 
@@ -138,7 +138,7 @@ You should save them to an array and update them each frame.
 
 An idea would be trees or rocks, but they could also be houses.
 
-### **3-3.** (2pts) Creation
+### **3-4.** (2pts) Creation
 
 Create a background element that is drawn using a class, similar to the cars. 
 
@@ -148,7 +148,7 @@ Let the user pick the position of the element using the mouse (using the mouse p
 
 Make sure the element is drawn first in the sequence of draw calls. 
 
-### **3-4.** (2pts) Brushes
+### **3-5.** (2pts) Brushes
 
 Create a second object. Change the shape that is placed when the interactor presses a key. You will want to present the controls as text instructing the interactor as to which keys to press.
 
